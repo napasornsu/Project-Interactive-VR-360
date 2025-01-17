@@ -2,7 +2,7 @@
     {
         "name" : "ghost1",
         "model" : "toilet.glb",
-        "info" : "test1",
+        "info" : "test1 asdasdacasdascasdawasdalvjksdhvjlklkdsfnldkfnvldknfgikdflkvndlfkgjdlfkgjdlfkndlkf,mvdlfkvdlknfvldknfvldkfvndfvndfvdfkvjdnlksfnjlkn",
         "sound" : "",
         "animation" : "",
         "link" : ""
@@ -10,7 +10,7 @@
     {
         "name" : "ghost2",
         "model" : "toilet.glb",
-        "info" : "asdasd2",
+        "info" : "ฟหกฟหแฟ",
         "sound" : "",
         "animation" : "",
         "link" : ""
