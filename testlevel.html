@@ -5,6 +5,7 @@
   </head>
   <body>
     <a-scene>
+        <a-sky color="black"></a-sky>
     
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
     
@@ -12,6 +13,10 @@
     
     </a-scene>
     <script>
+        const gap = 15;
+        const textColor = "black"; 
+        const textBGColor = "white";
+
         fetch("ghostinfo.json")
         .then(response => response.json())
         .then(ghostList => {
@@ -23,15 +28,39 @@
             entity.setAttribute("gltf-model", "assets/" + ghost.model);
             entity.setAttribute("animation-mixer", "clip:*");
             entity.setAttribute("scale", "5 5 5");
-            entity.setAttribute("position", `${index * 5} -5 -15`);
+            entity.setAttribute("position", `${index * gap} -5 -15`);
+
+            //create text field
+            const textField = document.createElement("a-entity");
+            textField.setAttribute("position", "-1 0 0");
+            textField.setAttribute("rotation", "0 0 0");
+            entity.appendChild(textField)
+
+            //create name text
+            const nameText = document.createElement("a-text");
+            nameText.setAttribute("value", ghost.name);
+            nameText.setAttribute("width", "2");
+            nameText.setAttribute("color", textColor);
+            nameText.setAttribute("position", "-0.2 2 0");
+            textField.appendChild(nameText);
 
             //create info text
-            const text = document.createElement("a-text");
-            text.setAttribute("value", ghost.name)
-            text.setAttribute("width", "2")
-            text.setAttribute("color", "black")
-            text.setAttribute("position", "-0.2 1 0")
-            entity.appendChild(text);
+            const infoText = document.createElement("a-text");
+            infoText.setAttribute("value", ghost.info);
+            infoText.setAttribute("width", "2");
+            infoText.setAttribute("color", textColor);
+            infoText.setAttribute("position", "0 -0.2 0");
+            nameText.appendChild(infoText);
+
+            //create bg plane
+            const textBG = document.createElement("a-plane");
+            textBG.setAttribute("color", textBGColor);
+            textBG.setAttribute("position", "0.2 -0.4 -0.02");
+            nameText.appendChild(textBG);
+
+            entity.addEventListener("click", () => {
+                //play sound or animation
+            });
 
             parentEntity.appendChild(entity);
           });

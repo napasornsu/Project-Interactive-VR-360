@@ -3,18 +3,24 @@
         "name" : "ghost1",
         "model" : "toilet.glb",
         "info" : "test1",
+        "sound" : "",
+        "animation" : "",
         "link" : ""
     },
     {
         "name" : "ghost2",
         "model" : "toilet.glb",
         "info" : "asdasd2",
+        "sound" : "",
+        "animation" : "",
         "link" : ""
     },
     {
         "name" : "ghost3",
         "model" : "toilet.glb",
         "info" : "GGGGG3",
+        "sound" : "",
+        "animation" : "",
         "link" : ""
     }
 
