@@ -16,6 +16,7 @@
         const gap = 15;
         const textColor = "white"; 
         const textBGColor = "blue";
+        let xPosBefore = 0;
 
         fetch("ghostinfo.json")
         .then(response => response.json())
@@ -23,12 +24,20 @@
           console.log(ghostList)
           const parentEntity = document.getElementById("Entities");
           ghostList.forEach((ghost, index) => {
-            //create model
+            //create entity
             const entity = document.createElement("a-entity");
-            entity.setAttribute("gltf-model", "assets/" + ghost.model);
-            entity.setAttribute("animation-mixer", "clip:*");
-            entity.setAttribute("scale", "5 5 5");
-            entity.setAttribute("position", `${index * gap} -4 -15`);
+            entity.setAttribute("position", `${xPosBefore + gap * ghost.gapScale} -4 -15`);
+            entity.setAttribute("scale", "5 5 5")
+            xPosBefore = xPosBefore + (gap * ghost.gapScale * 2)
+            
+            //create model
+            const model = document.createElement("a-entity");
+            model.setAttribute("gltf-model", "assets/" + ghost.model);
+            model.setAttribute("animation-mixer", "clip:*");
+            model.setAttribute("scale", String(ghost.scale) + " " + String(ghost.scale) + " " + String(ghost.scale));
+            model.setAttribute("position", ghost.position);
+            model.setAttribute("rotation", ghost.rotation);
+            entity.appendChild(model);
 
             //create text field
             const textField = document.createElement("a-entity");
@@ -42,7 +51,7 @@
                 + "letterSpacing: 3;"
                 
             );
-            textField.setAttribute("position", "-1 1.2 -0.2");
+            textField.setAttribute("position", "-1 1.2 1.2");
             textField.setAttribute("rotation", "0 0 0");
             entity.appendChild(textField)
 
