@@ -1,15 +1,15 @@
 [
     {
-        "name" : "ghost1",
-        "model" : "toilet.glb",
+        "name" : "yommaban",
+        "model" : "yommaban.glb",
         "info" : "test1 asdasdacasdascasdawasdalvjksdhvjlklkdsfnldkfnvldknfgikdflkvndlfkgjdlfkgjdlfkndlkf,mvdlfkvdlknfvldknfvldkfvndfvndfvdfkvjdnlksfnjlkn",
         "sound" : "",
         "animation" : "",
         "link" : ""
     },
     {
-        "name" : "ghost2",
-        "model" : "toilet.glb",
+        "name" : "pocong",
+        "model" : "pocong.glb",
         "info" : "ฟหกฟหแฟ",
         "sound" : "",
         "animation" : "",
@@ -17,6 +17,14 @@
     },
     {
         "name" : "ghost3",
+        "model" : "toilet.glb",
+        "info" : "GGGGG3",
+        "sound" : "",
+        "animation" : "",
+        "link" : ""
+    },
+    {
+        "name" : "ghost4",
         "model" : "toilet.glb",
         "info" : "GGGGG3",
         "sound" : "",
