@@ -1,0 +1,21 @@
+[
+    {
+        "name" : "ghost1",
+        "model" : "toilet.glb",
+        "info" : "test1",
+        "link" : ""
+    },
+    {
+        "name" : "ghost2",
+        "model" : "toilet.glb",
+        "info" : "asdasd2",
+        "link" : ""
+    },
+    {
+        "name" : "ghost3",
+        "model" : "toilet.glb",
+        "info" : "GGGGG3",
+        "link" : ""
+    }
+
+]
