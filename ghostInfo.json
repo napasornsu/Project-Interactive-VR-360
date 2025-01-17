@@ -12,12 +12,12 @@
         "model" : "pocong.glb",
         "info" : "ฟหกฟหแฟ",
         "sound" : "",
-        "animation" : "",
+        "animation" : "property: position; to: 0 -3 -15; dir: alternate; loop: true; dur: 1000;",
         "link" : ""
     },
     {
-        "name" : "ghost3",
-        "model" : "toilet.glb",
+        "name" : "wendigo",
+        "model" : "wendigo.glb",
         "info" : "GGGGG3",
         "sound" : "",
         "animation" : "",
