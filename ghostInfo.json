@@ -1,6 +1,6 @@
 [
     {
-        "name" : "yommaban",
+        "name" : "Hell",
         "model" : "yommaban.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
@@ -12,8 +12,8 @@
         "link" : ""
     },
     {
-        "name" : "pocong",
-        "model" : "pocong.glb",
+        "name" : "long_leg",
+        "model" : "long_leg.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
@@ -36,8 +36,8 @@
         "link" : ""
     },
     {
-        "name" : "ghost4",
-        "model" : "wendigo.glb",
+        "name" : "ghost girl",
+        "model" : "ghost_girl.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
