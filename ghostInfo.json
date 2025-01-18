@@ -36,8 +36,8 @@
         "link" : ""
     },
     {
-        "name" : "ghost4",
-        "model" : "wendigo.glb",
+        "name" : "ghost girl",
+        "model" : "ghost_girl.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
