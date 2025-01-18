@@ -12,8 +12,8 @@
         "link" : ""
     },
     {
-        "name" : "long_leg",
-        "model" : "long_leg.glb",
+        "name" : "blobb man",
+        "model" : "blobb_man.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
