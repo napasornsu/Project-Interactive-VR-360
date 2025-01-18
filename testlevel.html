@@ -35,7 +35,7 @@
           console.log(ghostList)
           const parentEntity = document.getElementById("Entities");
           ghostList.forEach((ghost, index) => {
-              // ตรวจสอบว่าถึงจำนวนในแถวหรือยัง
+            // ตรวจสอบว่าถึงจำนวนในแถวหรือยัง
             if (index % rowLimit === 0 && index !== 0) {
               // หลังจากครบแถวจะเพิ่มระยะห่างในแนว Z
               zPosBefore -= rowVerticalGap; // เพิ่มระยะห่างในแนว Z
@@ -44,7 +44,7 @@
             //create entity
             const entity = document.createElement("a-entity");
             entity.setAttribute("position", `${xPosBefore + gap * ghost.gapScale} ${yPosBefore} ${zPosBefore}`);
-            entity.setAttribute("scale", "5 5 5")
+            entity.setAttribute("scale", "5 5 5");
             
             //create model
             const model = document.createElement("a-entity");
@@ -66,9 +66,17 @@
                 + "lineHeight: 55;"
                 + "letterSpacing: 3;"
             );
-            textField.setAttribute("position", "-1 1.2 1.2");
-            textField.setAttribute("rotation", "0 0 0");
-            entity.appendChild(textField)
+    
+            // ถ้าอยู่ในแถวที่ 2 ให้หมุน text 180 องศา
+            const row = Math.floor(index / rowLimit); // คำนวณว่าอยู่ในแถวที่เท่าไหร่
+            if (row === 1) {
+              textField.setAttribute("rotation", "0 180 0");
+            } else {
+              textField.setAttribute("rotation", "0 0 0");
+            }
+    
+            textField.setAttribute("position", "-1 1.2 0");
+            entity.appendChild(textField);
       
             //create bg plane
             const textBG = document.createElement("a-plane");
@@ -94,7 +102,7 @@
             xPosBefore += gap * ghost.gapScale * 2; // เพิ่มระยะห่างของโมเดลแต่ละตัว
           });
       });
-      
     </script>
+    
   </body>
 </html>
