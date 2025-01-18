@@ -12,8 +12,8 @@
         "link" : ""
     },
     {
-        "name" : "blobb man",
-        "model" : "blobb_man.glb",
+        "name" : "Skin",
+        "model" : "redskin.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
@@ -24,8 +24,8 @@
         "link" : ""
     },
     {
-        "name" : "wendigo",
-        "model" : "wendigo.glb",
+        "name" : "ghost girl",
+        "model" : "ghost_girl.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
@@ -36,8 +36,8 @@
         "link" : ""
     },
     {
-        "name" : "ghost girl",
-        "model" : "ghost_girl.glb",
+        "name" : "Wendigo",
+        "model" : "wendigo.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
@@ -60,8 +60,8 @@
         "link" : ""
     },
     {
-        "name" : "Skin",
-        "model" : "redskin.glb",
+        "name" : "Fat",
+        "model" : "fat.glb",
         "scale" : 1.0,
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
@@ -84,8 +84,8 @@
         "link" : ""
     },
     {
-        "name" : "Fat",
-        "model" : "fat.glb",
+        "name" : "Child",
+        "model" : "child.glb",
         "scale" : 1.0,
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
