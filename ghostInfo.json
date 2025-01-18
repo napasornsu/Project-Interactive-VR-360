@@ -46,6 +46,54 @@
         "sound" : "",
         "animation" : "",
         "link" : ""
+    },
+    {
+        "name" : "ghost5",
+        "model" : "wendigo.glb",
+        "scale" : 1.0,
+        "rotation" : "0 180 0",
+        "position" : "0.3 0 0",
+        "gapScale" : 1.0,
+        "info" : "GGGGG3",
+        "sound" : "",
+        "animation" : "",
+        "link" : ""
+    },
+    {
+        "name" : "ghost6",
+        "model" : "wendigo.glb",
+        "scale" : 1.0,
+        "rotation" : "0 180 0",
+        "position" : "0.3 0 0",
+        "gapScale" : 1.0,
+        "info" : "GGGGG3",
+        "sound" : "",
+        "animation" : "",
+        "link" : ""
+    },
+    {
+        "name" : "ghost7",
+        "model" : "wendigo.glb",
+        "scale" : 1.0,
+        "rotation" : "0 180 0",
+        "position" : "0.3 0 0",
+        "gapScale" : 1.0,
+        "info" : "GGGGG3",
+        "sound" : "",
+        "animation" : "",
+        "link" : ""
+    },
+    {
+        "name" : "ghost8",
+        "model" : "wendigo.glb",
+        "scale" : 1.0,
+        "rotation" : "0 180 0",
+        "position" : "0.3 0 0",
+        "gapScale" : 1.0,
+        "info" : "GGGGG3",
+        "sound" : "",
+        "animation" : "",
+        "link" : ""
     }
 
 ]

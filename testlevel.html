@@ -13,29 +13,38 @@
 
       <a-entity 
         gltf-model="assets/the_hunters_rest3.glb" 
-        position="38 -4 -2" 
+        position="38 -4 0" 
         scale="5.5 5.5 5.5"
         rotation="0 90 0"
       ></a-entity>
     
     </a-scene>
     <script>
-        const gap = 15;
-        const textColor = "white"; 
-        const textBGColor = "blue";
-        let xPosBefore = 0;
-
-        fetch("ghostinfo.json")
+      const gap = 15;
+      const textColor = "white"; 
+      const textBGColor = "blue";
+      let xPosBefore = 0;
+      let yPosBefore = -4; // ใช้สำหรับตำแหน่งแกน Y
+      let zPosBefore = -15; // เพิ่มตำแหน่งเริ่มต้นในแกน Z
+      const rowLimit = 4; // จำนวนโมเดลต่อ 1 แถว
+      const rowVerticalGap = -30; // ระยะห่างระหว่างแถวในแนว Z (vertical gap)
+      
+      fetch("ghostinfo.json")
         .then(response => response.json())
         .then(ghostList => {
           console.log(ghostList)
           const parentEntity = document.getElementById("Entities");
           ghostList.forEach((ghost, index) => {
+              // ตรวจสอบว่าถึงจำนวนในแถวหรือยัง
+            if (index % rowLimit === 0 && index !== 0) {
+              // หลังจากครบแถวจะเพิ่มระยะห่างในแนว Z
+              zPosBefore -= rowVerticalGap; // เพิ่มระยะห่างในแนว Z
+              xPosBefore = 0; // รีเซ็ตตำแหน่ง X ให้เป็นแถวใหม่
+            }
             //create entity
             const entity = document.createElement("a-entity");
-            entity.setAttribute("position", `${xPosBefore + gap * ghost.gapScale} -4 -15`);
+            entity.setAttribute("position", `${xPosBefore + gap * ghost.gapScale} ${yPosBefore} ${zPosBefore}`);
             entity.setAttribute("scale", "5 5 5")
-            xPosBefore = xPosBefore + (gap * ghost.gapScale * 2)
             
             //create model
             const model = document.createElement("a-entity");
@@ -45,7 +54,7 @@
             model.setAttribute("position", ghost.position);
             model.setAttribute("rotation", ghost.rotation);
             entity.appendChild(model);
-
+      
             //create text field
             const textField = document.createElement("a-entity");
             textField.setAttribute("geometry", "primitive: plane; width: 1; height: 1");
@@ -56,18 +65,17 @@
                 + "color:" + textColor + ";"
                 + "lineHeight: 55;"
                 + "letterSpacing: 3;"
-                
             );
             textField.setAttribute("position", "-1 1.2 1.2");
             textField.setAttribute("rotation", "0 0 0");
             entity.appendChild(textField)
-
+      
             //create bg plane
             const textBG = document.createElement("a-plane");
             textBG.setAttribute("color", textBGColor);
             textBG.setAttribute("position", "0 0 0");
             textField.appendChild(textBG);
-
+      
             //create name text
             const nameText = document.createElement("a-text");
             nameText.setAttribute("value", ghost.name);
@@ -75,16 +83,18 @@
             nameText.setAttribute("color", textColor);
             nameText.setAttribute("position", "-0.4 0.4 0.01");
             textField.appendChild(nameText);
-
+      
             entity.addEventListener("click", () => {
                 //play sound or animation
             });
-
+      
             parentEntity.appendChild(entity);
+      
+            // อัปเดตตำแหน่ง xPosBefore สำหรับโมเดลถัดไปในแถว
+            xPosBefore += gap * ghost.gapScale * 2; // เพิ่มระยะห่างของโมเดลแต่ละตัว
           });
-          
-        
-        });
+      });
+      
     </script>
   </body>
 </html>
