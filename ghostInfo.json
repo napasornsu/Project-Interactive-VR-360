@@ -1,24 +1,24 @@
 [
     {
-        "name" : "Hell",
+        "name" : "Yama",
         "model" : "yommaban.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
-        "info" : "test1 asdasdacasdascasdawasdalvjksdhvjlklkdsfnldkfnvldknfgikdflkvndlfkgjdlfkgjdlfkndlkf,mvdlfkvdlknfvldknfvldkfvndfvndfvdfkvjdnlksfnjlkn",
+        "info" : "Yama, the ancient god of death in Thai and many other Southeast Asian cultures, is both a feared and revered figure. His story is deeply rooted in Buddhist, Hindu, and local folk traditions. In Thai mythology, Yama is known as Phraphor Yama, the lord of the underworld who oversees the judgment of souls after death. His role is crucial as he decides the fate of the deceased, guiding them to their next destination based on their deeds in life.",
         "sound" : "",
         "animation" : "",
         "link" : ""
     },
     {
-        "name" : "Skin",
+        "name" : "The Skinless Spirit",
         "model" : "redskin.glb",
         "scale" : 1.0,
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
-        "info" : "ฟหกฟหแฟ",
+        "info" : "In a small, secluded village far from the bustling cities, there is an ancient legend passed down through generations about a terrifying entity known as The Skinless Spirit or The Skinless Woman. This chilling tale begins with the story of a beautiful young woman named Miyo, who was the most admired in the village for her graceful beauty and fair skin.",
         "sound" : "",
         "animation" : "property: position; to: 0 -3 -15; dir: alternate; loop: true; dur: 1000;",
         "link" : ""
@@ -30,7 +30,7 @@
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
-        "info" : "GGGGG3",
+        "info" : "The Ghost Girl is a common figure in ghost stories and folklore around the world. She is typically depicted as the spirit of a young girl who died under tragic or mysterious circumstances, and her restless spirit often haunts certain locations, seeking closure or revenge.",
         "sound" : "",
         "animation" : "",
         "link" : ""
@@ -42,7 +42,7 @@
         "rotation" : "0 0 0",
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
-        "info" : "GGGGG3",
+        "info" : "The Wendigo is a mythological creature or spirit from the folklore of the Algonquin-speaking Native American tribes, particularly in regions around the Great Lakes, northern Canada, and parts of the northeastern United States. It is most often depicted as a malevolent, cannibalistic spirit associated with insatiable greed, hunger, and a thirst for human flesh.",
         "sound" : "",
         "animation" : "",
         "link" : ""
@@ -54,19 +54,19 @@
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
-        "info" : "GGGGG3",
+        "info" : "In a small, quiet town in rural Japan, there is a chilling legend about Blood Girl (少女血 – Shōjo Chi), a vengeful spirit consumed by rage and a curse of bitterness. She is said to appear on silent, stormy nights, especially during heavy rains and lightning storms, leaving behind trails of blood and an eerie, sorrowful sobbing sound.",
         "sound" : "",
         "animation" : "",
         "link" : ""
     },
     {
-        "name" : "Fat",
+        "name" : "The Glutton of the Moor",
         "model" : "fat.glb",
         "scale" : 1.0,
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
-        "info" : "GGGGG3",
+        "info" : "In the misty moorlands of Scotland, a ghastly legend tells of The Glutton, a terrifying ghost that haunts travelers who wander too far into the swampy terrain. This spirit is said to be grotesquely large, its body swollen and malformed, with pale, greasy skin that glows faintly under the moonlight.",
         "sound" : "",
         "animation" : "",
         "link" : ""
@@ -78,19 +78,19 @@
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
-        "info" : "GGGGG3",
+        "info" : "is a creature or spirit from Thai folklore, often depicted as a menacing or terrifying entity with three distinct heads. While not as widely known or specific as some other Thai spirits, the concept of a three-headed ghost can appear in local legends or be associated with imaginative storytelling, reflecting themes of fear and the supernatural.",
         "sound" : "",
         "animation" : "",
         "link" : ""
     },
     {
-        "name" : "Child",
+        "name" : "Phi Luk Kok",
         "model" : "child.glb",
         "scale" : 1.0,
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
-        "info" : "GGGGG3",
+        "info" : "refers to a type of ghost or spirit in Thai folklore. It is believed to be the spirit of a child who died before being born, often due to miscarriage or abortion. This spirit is said to linger in the earthly realm, sometimes attached to its mother or the location where the event occurred.",
         "sound" : "",
         "animation" : "",
         "link" : ""
