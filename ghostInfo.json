@@ -60,8 +60,8 @@
         "link" : ""
     },
     {
-        "name" : "ghost6",
-        "model" : "wendigo.glb",
+        "name" : "Skin",
+        "model" : "redskin.glb",
         "scale" : 1.0,
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
@@ -72,8 +72,8 @@
         "link" : ""
     },
     {
-        "name" : "ghost7",
-        "model" : "wendigo.glb",
+        "name" : "Three Head",
+        "model" : "three_head.glb",
         "scale" : 1.0,
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
@@ -84,8 +84,8 @@
         "link" : ""
     },
     {
-        "name" : "ghost8",
-        "model" : "wendigo.glb",
+        "name" : "Fat",
+        "model" : "fat.glb",
         "scale" : 1.0,
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
