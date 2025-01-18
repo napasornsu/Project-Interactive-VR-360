@@ -48,8 +48,8 @@
         "link" : ""
     },
     {
-        "name" : "ghost5",
-        "model" : "wendigo.glb",
+        "name" : "Blood Girl",
+        "model" : "blood_girl.glb",
         "scale" : 1.0,
         "rotation" : "0 180 0",
         "position" : "0.3 0 0",
