@@ -12,7 +12,7 @@
       <a-entity id="Entities"></a-entity>
 
       <a-entity 
-        gltf-model="assets/the_hunters_rest3.glb" 
+        gltf-model="assets/model/the_hunters_rest3.glb" 
         position="38 -4 0" 
         scale="5.5 5.5 5.5"
         rotation="0 90 0"
@@ -48,7 +48,7 @@
             
             //create model
             const model = document.createElement("a-entity");
-            model.setAttribute("gltf-model", "/Project-Interactive-VR-360/assets/" + ghost.model);
+            model.setAttribute("gltf-model", "/Project-Interactive-VR-360/assets/model" + ghost.model);
             model.setAttribute("animation-mixer", "clip:*");
             model.setAttribute("scale", String(ghost.scale) + " " + String(ghost.scale) + " " + String(ghost.scale));
             model.setAttribute("position", ghost.position);
