@@ -55,7 +55,7 @@
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
         "info" : "In a small, quiet town in rural Japan, there is a chilling legend about Blood Girl (少女血 – Shōjo Chi), a vengeful spirit consumed by rage and a curse of bitterness. She is said to appear on silent, stormy nights, especially during heavy rains and lightning storms, leaving behind trails of blood and an eerie, sorrowful sobbing sound.",
-        "sound" : "",
+        "sound" : "Blood_Girl.mp3",
         "animation" : "",
         "link" : ""
     },
@@ -67,7 +67,7 @@
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
         "info" : "In the misty moorlands of Scotland, a ghastly legend tells of The Glutton, a terrifying ghost that haunts travelers who wander too far into the swampy terrain. This spirit is said to be grotesquely large, its body swollen and malformed, with pale, greasy skin that glows faintly under the moonlight.",
-        "sound" : "",
+        "sound" : "The_Glutton_of_the_Moor.mp3",
         "animation" : "",
         "link" : ""
     },
@@ -79,7 +79,7 @@
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
         "info" : "is a creature or spirit from Thai folklore, often depicted as a menacing or terrifying entity with three distinct heads. While not as widely known or specific as some other Thai spirits, the concept of a three-headed ghost can appear in local legends or be associated with imaginative storytelling, reflecting themes of fear and the supernatural.",
-        "sound" : "",
+        "sound" : "Three_Head.mp3",
         "animation" : "",
         "link" : ""
     },
@@ -91,7 +91,7 @@
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
         "info" : "refers to a type of ghost or spirit in Thai folklore. It is believed to be the spirit of a child who died before being born, often due to miscarriage or abortion. This spirit is said to linger in the earthly realm, sometimes attached to its mother or the location where the event occurred.",
-        "sound" : "",
+        "sound" : "Phi_Luk_Kok.mp3",
         "animation" : "",
         "link" : ""
     }
