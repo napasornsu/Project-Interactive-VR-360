@@ -48,7 +48,7 @@
             
             //create model
             const model = document.createElement("a-entity");
-            model.setAttribute("gltf-model", "/Project-Interactive-VR-360/assets" + ghost.model);
+            model.setAttribute("gltf-model", "/assets/" + ghost.model);
             model.setAttribute("animation-mixer", "clip:*");
             model.setAttribute("scale", String(ghost.scale) + " " + String(ghost.scale) + " " + String(ghost.scale));
             model.setAttribute("position", ghost.position);
@@ -77,6 +77,7 @@
     
             textField.setAttribute("position", "-1 1.2 0");
             entity.appendChild(textField);
+            textField.setAttribute("sound", "src: url(/assets/sounds/" + ghost.sound + "); on: click");
       
             //create bg plane
             const textBG = document.createElement("a-plane");
@@ -91,9 +92,14 @@
             nameText.setAttribute("color", textColor);
             nameText.setAttribute("position", "-0.4 0.4 0.01");
             textField.appendChild(nameText);
+
+            //create sound
+            const sound = document.createElement("a-sound");
+            sound.setAttribute("src", "/assets/sounds/" + ghost.model);
+            model.appendChild(sound);
       
             entity.addEventListener("click", () => {
-                //play sound or animation
+              //do something
             });
       
             parentEntity.appendChild(entity);
