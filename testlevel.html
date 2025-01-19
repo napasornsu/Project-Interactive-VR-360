@@ -17,9 +17,38 @@
         scale="5.5 5.5 5.5"
         rotation="0 90 0"
       ></a-entity>
-    
+
+      <a-light type="spot" position="5 10 -10" color="#f00000" intensity="0.8" angle="200"></a-light>
+      <a-light type="point" position="0 5 -5" color="#ffffff" intensity="0.3"></a-light>
+      
     </a-scene>
+
+    <!-- Music Controls -->
+    <div style="position: absolute; top: 10px; left: 10px; color: white;">
+      <h2>Select Background Music</h2>
+      <button onclick="playMusic('assets/sounds/bg1.mp3')">Play Song 1</button>
+      <button onclick="playMusic('assets/sounds/bg2.mp3')">Play Song 2</button>
+      <button onclick="playMusic('assets/sounds/bg3(piano).mp3')">Play Song 3</button>
+      <button onclick="pauseMusic()">Pause Music</button>
+    </div>
+
+    <audio id="backgroundMusic" loop></audio>
+
     <script>
+      // Get the audio element
+      const backgroundMusic = document.getElementById('backgroundMusic');
+
+      // Function to play a selected song
+      function playMusic(songPath) {
+        backgroundMusic.src = songPath; // Set the source to the selected song
+        backgroundMusic.play(); // Play the music
+      }
+
+      // Function to pause the music
+      function pauseMusic() {
+        backgroundMusic.pause();
+      }
+
       const gap = 15;
       const textColor = "white"; 
       const textBGColor = "blue";
