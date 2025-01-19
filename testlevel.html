@@ -41,8 +41,12 @@
       // Function to play a selected song
       function playMusic(songPath) {
         backgroundMusic.src = songPath; // Set the source to the selected song
+        backgroundMusic.volume = 0.01;
         backgroundMusic.play(); // Play the music
       }
+
+      //play default music
+      playMusic('assets/sounds/bg3(piano).mp3');
 
       // Function to pause the music
       function pauseMusic() {
@@ -77,7 +81,7 @@
             
             //create model
             const model = document.createElement("a-entity");
-            model.setAttribute("gltf-model", "/assets/" + ghost.model);
+            model.setAttribute("gltf-model", "/Project-Interactive-VR-360/assets/" + ghost.model);
             model.setAttribute("animation-mixer", "clip:*");
             model.setAttribute("scale", String(ghost.scale) + " " + String(ghost.scale) + " " + String(ghost.scale));
             model.setAttribute("position", ghost.position);
@@ -99,7 +103,7 @@
 
             //create TV
             const tv = document.createElement("a-entity");
-            tv.setAttribute("gltf-model", "/assets/tv.glb");
+            tv.setAttribute("gltf-model", "/Project-Interactive-VR-360/assets/tv.glb");
             tv.setAttribute("position", "0 -0.05 -0.48");
             tv.setAttribute("scale", "1.48 1.6 1.6");
             textField.appendChild(tv);
@@ -111,11 +115,12 @@
             } else {
               textField.setAttribute("rotation", "0 0 0");
             }
-    
+
+            //play sound when click textfield
             textField.setAttribute("position", "-1 1.2 0");
             entity.appendChild(textField);
-            textField.setAttribute("sound", "src: url(/assets/sounds/" + ghost.sound + "); on: click");
-      
+            textField.setAttribute("sound", "src: url(/Project-Interactive-VR-360/assets/sounds/" + ghost.sound + "); on: click; volume: 2.0;");
+            
             //create bg plane
             const textBG = document.createElement("a-plane");
             textBG.setAttribute("color", textBGColor);
@@ -129,12 +134,7 @@
             nameText.setAttribute("color", textColor);
             nameText.setAttribute("position", "-0.4 0.4 0.01");
             textField.appendChild(nameText);
-
-            //create sound
-            const sound = document.createElement("a-sound");
-            sound.setAttribute("src", "/assets/sounds/" + ghost.model);
-            model.appendChild(sound);
-      
+            
             entity.addEventListener("click", () => {
               //do something
             });
