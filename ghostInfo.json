@@ -7,7 +7,7 @@
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
         "info" : "Yama, the ancient god of death in Thai and many other Southeast Asian cultures, is both a feared and revered figure. His story is deeply rooted in Buddhist, Hindu, and local folk traditions. In Thai mythology, Yama is known as Phraphor Yama, the lord of the underworld who oversees the judgment of souls after death. His role is crucial as he decides the fate of the deceased, guiding them to their next destination based on their deeds in life.",
-        "sound" : "",
+        "sound" : "Yama.mp3",
         "animation" : "",
         "link" : ""
     },
@@ -19,9 +19,9 @@
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
         "info" : "In a small, secluded village far from the bustling cities, there is an ancient legend passed down through generations about a terrifying entity known as The Skinless Spirit or The Skinless Woman. This chilling tale begins with the story of a beautiful young woman named Miyo, who was the most admired in the village for her graceful beauty and fair skin.",
-        "sound" : "",
+        "sound" : "The_Skinless_Spirit.mp3",
         "animation" : "property: position; to: 0 -3 -15; dir: alternate; loop: true; dur: 1000;",
-        "link" : ""
+        "link" : "The Skinless Spirit.mp3"
     },
     {
         "name" : "ghost girl",
@@ -31,7 +31,7 @@
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
         "info" : "The Ghost Girl is a common figure in ghost stories and folklore around the world. She is typically depicted as the spirit of a young girl who died under tragic or mysterious circumstances, and her restless spirit often haunts certain locations, seeking closure or revenge.",
-        "sound" : "",
+        "sound" : "ghost_girl.mp3",
         "animation" : "",
         "link" : ""
     },
@@ -43,7 +43,7 @@
         "position" : "0.3 0 0",
         "gapScale" : 1.0,
         "info" : "The Wendigo is a mythological creature or spirit from the folklore of the Algonquin-speaking Native American tribes, particularly in regions around the Great Lakes, northern Canada, and parts of the northeastern United States. It is most often depicted as a malevolent, cannibalistic spirit associated with insatiable greed, hunger, and a thirst for human flesh.",
-        "sound" : "",
+        "sound" : "Wendigo.mp3",
         "animation" : "",
         "link" : ""
     },
